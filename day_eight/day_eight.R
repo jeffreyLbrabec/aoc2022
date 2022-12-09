@@ -1,5 +1,8 @@
 ## Advent of Code Day 8
 
+library(tidyverse)
+library(here)
+
 input <- read_lines(here("day_eight/input.txt")) |> 
   as_tibble() |> 
   separate(value, into = as.character(c(1:100)), sep = "") |> 
